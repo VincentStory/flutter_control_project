@@ -14,7 +14,7 @@ class ButtonPage extends StatelessWidget {
           Center(
             child: ElevatedButton(
               onPressed: () {
-                print('ElevatedButton');
+                print('click Button');
               },
               style: ButtonStyle(
                   shape: MaterialStateProperty.all(RoundedRectangleBorder(
@@ -31,7 +31,7 @@ class ButtonPage extends StatelessWidget {
           ),
           OutlinedButton(
             onPressed: () {
-              print("OutlinedButton");
+              print("click Button");
             },
             style: OutlinedButton.styleFrom(
               shape: StadiumBorder(),
