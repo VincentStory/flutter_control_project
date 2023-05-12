@@ -38,27 +38,14 @@ class ButtonPage extends StatelessWidget {
               side: BorderSide(color: Color(0xff009E60)),
             ),
             child: const Text(
-              'text',
+              'text'˚,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
               style: TextStyle(
                 color: Color(0xff009E60),
               ),
             ),
           ),
-          // OutlinedButton(
-          //   onPressed: () {
-          //     print("copy");
-          //   },
-          //   style: OutlinedButton.styleFrom(
-          //     shape: const StadiumBorder(),
-          //     side: const BorderSide(color: Color(0xff009E60))),
-          //   ),
-          //   child: const Text(
-          //     'Menyalin',
-          //     style: TextStyle(
-          //       color: ConfigColor.colorPrimary,
-          //     ),
-          //   ),
-          // ),
         ],
       ),
     );

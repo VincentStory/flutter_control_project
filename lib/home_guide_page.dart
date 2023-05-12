@@ -18,7 +18,7 @@ class HomeGuidePage extends StatelessWidget {
               onTap: () {
                 Navigator.pushNamed(context, ConfigRouter.button);
               },
-              child: const Text('button'),
+              child: const Text('按钮'),
             ),
           ),
         ],
