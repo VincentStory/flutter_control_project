@@ -34,11 +34,13 @@ class ButtonPage extends StatelessWidget {
               print("click Button");
             },
             style: OutlinedButton.styleFrom(
-              shape: StadiumBorder(),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5.0),
+              ),
               side: BorderSide(color: Color(0xff009E60)),
             ),
             child: const Text(
-              'text'˚,
+              'text',
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
