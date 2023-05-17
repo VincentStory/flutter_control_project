@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_control_project/widget/app_bar.dart';
 
 class ButtonPage extends StatelessWidget {
   const ButtonPage({Key? key}) : super(key: key);
@@ -6,11 +7,9 @@ class ButtonPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: appBar(title: 'Button样式'),
       body: Column(
         children: [
-          const SizedBox(
-            height: 100,
-          ),
           Center(
             child: ElevatedButton(
               onPressed: () {
@@ -45,6 +44,55 @@ class ButtonPage extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
                 color: Color(0xff009E60),
+              ),
+            ),
+          ),
+          //实现文字加图片的效果
+          OutlinedButton.icon(
+            icon: const Icon(
+              Icons.add,
+              color: Color(0xff000000),
+            ),
+            onPressed: () {
+              print("click Button");
+            },
+            label: const Text(
+              '上传附件',
+              style: TextStyle(
+                  fontSize: 14, color: Color(0xff000000),),
+            ),
+            style: OutlinedButton.styleFrom(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
+              side: const BorderSide(
+                width: 1,
+                color: Color(0xff000000),
+              ),
+            ),
+          ),
+          //另外一种方式实现图片加文字的效果
+          Container(
+            width: 100,
+            child: OutlinedButton(
+              onPressed: () {
+                print("click Button");
+              },
+              style: OutlinedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5.0),
+                ),
+                side: BorderSide(color: Color(0xff009E60)),
+              ),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.add,
+                    color: Color(0xff000000),
+                  ),
+                  Text('text'
+                  ,style: TextStyle(color: Color(0xff000000)),),
+                ],
               ),
             ),
           ),

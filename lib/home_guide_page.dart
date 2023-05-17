@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_control_project/widget/app_bar.dart';
 
 import 'config_router.dart';
 
@@ -8,11 +9,9 @@ class HomeGuidePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: appBar(title: '目录'),
       body: Column(
         children: [
-          const SizedBox(
-            height: 80,
-          ),
           Center(
             child: InkWell(
               onTap: () {
@@ -21,8 +20,19 @@ class HomeGuidePage extends StatelessWidget {
               child: const Text('按钮'),
             ),
           ),
+          const SizedBox(
+            height: 10,
+          ),
+          _lineView(),
         ],
       ),
+    );
+  }
+
+  _lineView() {
+    return Container(
+      height: 0.5,
+      color: Color(0xff000000),
     );
   }
 }
