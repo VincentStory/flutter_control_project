@@ -17,13 +17,13 @@ class ButtonPage extends StatelessWidget {
               },
               style: ButtonStyle(
                   shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18))),
+                      borderRadius: BorderRadius.circular(5))),
                   padding: MaterialStateProperty.all(
-                      const EdgeInsets.symmetric(vertical: 12)),
+                      const EdgeInsets.symmetric(vertical: 2)),
                   backgroundColor:
                       MaterialStateProperty.all(const Color(0xff009E60))),
               child: const Text(
-                'text',
+                '按钮',
                 style: TextStyle(fontSize: 14),
               ),
             ),
@@ -39,7 +39,7 @@ class ButtonPage extends StatelessWidget {
               side: BorderSide(color: Color(0xff009E60)),
             ),
             child: const Text(
-              'text',
+              '按钮',
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
@@ -57,7 +57,7 @@ class ButtonPage extends StatelessWidget {
               print("click Button");
             },
             label: const Text(
-              '上传附件',
+              '按钮',
               style: TextStyle(
                   fontSize: 14, color: Color(0xff000000),),
             ),
@@ -85,12 +85,13 @@ class ButtonPage extends StatelessWidget {
                 side: BorderSide(color: Color(0xff009E60)),
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
                     Icons.add,
                     color: Color(0xff000000),
                   ),
-                  Text('text'
+                  Text('按钮'
                   ,style: TextStyle(color: Color(0xff000000)),),
                 ],
               ),

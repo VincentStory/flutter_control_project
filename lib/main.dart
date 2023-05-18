@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_control_project/button_page.dart';
+import 'package:flutter_control_project/page/button_page.dart';
 import 'package:flutter_control_project/config_router.dart';
-import 'package:flutter_control_project/home_guide_page.dart';
+import 'package:flutter_control_project/page/column_page.dart';
+import 'package:flutter_control_project/page/home_guide_page.dart';
+import 'package:flutter_control_project/page/listview_page.dart';
+import 'package:flutter_control_project/page/stack_page.dart';
+import 'package:flutter_control_project/page/text_page.dart';
+
+import 'page/row_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,9 +35,13 @@ class MyApp extends StatelessWidget {
       ),
       home: const HomeGuidePage(),
       routes: {
-        ConfigRouter.button:(context) => const ButtonPage(),
+        ConfigRouter.button: (context) => const ButtonPage(),
+        ConfigRouter.text: (context) => const TextPage(),
+        ConfigRouter.listview: (context) => const ListViewPage(),
+        ConfigRouter.row: (context) => const RowPage(),
+        ConfigRouter.column: (context) => const ColumnPage(),
+        ConfigRouter.stack: (context) => const StackPage(),
       },
     );
   }
-
 }
