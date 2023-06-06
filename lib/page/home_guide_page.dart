@@ -10,70 +10,81 @@ class HomeGuidePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(title: '目录'),
-      body: Center(
-        child: Column(
-          children: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, ConfigRouter.button);
-              },
-              child: const Text('按钮'),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, ConfigRouter.text);
-              },
-              child: const Text('文本'),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, ConfigRouter.listview);
-              },
-              child: const Text('列表'),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, ConfigRouter.row);
-              },
-              child: const Text('水平布局'),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, ConfigRouter.column);
-              },
-              child: const Text('线性布局'),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, ConfigRouter.stack);
-              },
-              child: const Text('帧布局'),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, ConfigRouter.stack);
-              },
-              child: const Text('页面之间跳转并传递参数'),
-            ),
-          ],
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, ConfigRouter.button);
+                },
+                child: const Text('按钮'),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, ConfigRouter.text);
+                },
+                child: const Text('文本'),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, ConfigRouter.listview);
+                },
+                child: const Text('列表'),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, ConfigRouter.row);
+                },
+                child: const Text('水平布局'),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, ConfigRouter.column);
+                },
+                child: const Text('线性布局'),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, ConfigRouter.stack);
+                },
+                child: const Text('帧布局'),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, ConfigRouter.stack);
+                },
+                child: const Text('页面之间跳转并传递参数'),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, ConfigRouter.custom_view);
+                },
+                child: const Text('自定义View'),
+              ),
+            ],
+          ),
         ),
       ),
     );
