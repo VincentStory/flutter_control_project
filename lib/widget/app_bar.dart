@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 appBar({String? title, bool showBack = true, List<Widget>? actions}) {
   return AppBar(
-    brightness: Brightness.light,
+    // brightness: Brightness.light,
     centerTitle: true,
     elevation: 0,
     backgroundColor: Colors.transparent,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_control_project/widget/app_bar.dart';
 
+
 class ButtonPage extends StatelessWidget {
   const ButtonPage({Key? key}) : super(key: key);
 
@@ -59,7 +60,9 @@ class ButtonPage extends StatelessWidget {
             label: const Text(
               '按钮',
               style: TextStyle(
-                  fontSize: 14, color: Color(0xff000000),),
+                fontSize: 14,
+                color: Color(0xff000000),
+              ),
             ),
             style: OutlinedButton.styleFrom(
               shape: RoundedRectangleBorder(
@@ -91,12 +94,15 @@ class ButtonPage extends StatelessWidget {
                     Icons.add,
                     color: Color(0xff000000),
                   ),
-                  Text('按钮'
-                  ,style: TextStyle(color: Color(0xff000000)),),
+                  Text(
+                    '按钮',
+                    style: TextStyle(color: Color(0xff000000)),
+                  ),
                 ],
               ),
             ),
           ),
+
         ],
       ),
     );

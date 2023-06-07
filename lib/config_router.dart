@@ -8,6 +8,7 @@ class ConfigRouter {
   static const String stack = '/stack';
   static const String custom_view = '/custom_view';
   static const String circle_progress = '/circle_progress';
+  static const String banner = '/banner';
 
 
 }

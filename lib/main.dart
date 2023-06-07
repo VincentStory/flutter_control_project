@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_control_project/page/banner_page.dart';
 import 'package:flutter_control_project/page/button_page.dart';
 import 'package:flutter_control_project/config_router.dart';
 import 'package:flutter_control_project/page/circle_progress_page.dart';
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
         ConfigRouter.column: (context) => const ColumnPage(),
         ConfigRouter.stack: (context) => const StackPage(),
         ConfigRouter.custom_view: (context) => const CustomPage(),
+        ConfigRouter.banner: (context) => const BannerPage(),
         ConfigRouter.circle_progress: (context) => const CircleProgressPage(progress: 10),
       },
     );

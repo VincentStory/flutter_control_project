@@ -83,6 +83,15 @@ class HomeGuidePage extends StatelessWidget {
                 },
                 child: const Text('自定义View'),
               ),
+              const SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, ConfigRouter.banner);
+                },
+                child: const Text('Banner'),
+              ),
             ],
           ),
         ),
