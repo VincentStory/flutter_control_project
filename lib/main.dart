@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_control_project/page/banner_page.dart';
+import 'package:flutter_control_project/page/box_page.dart';
 import 'package:flutter_control_project/page/button_page.dart';
 import 'package:flutter_control_project/config_router.dart';
 import 'package:flutter_control_project/page/circle_progress_page.dart';
 import 'package:flutter_control_project/page/column_page.dart';
 import 'package:flutter_control_project/page/custom_view_page.dart';
-import 'package:flutter_control_project/page/home_guide_page.dart';
+import 'package:flutter_control_project/page/home/home_guide_page.dart';
 import 'package:flutter_control_project/page/listview_page.dart';
 import 'package:flutter_control_project/page/stack_page.dart';
 import 'package:flutter_control_project/page/text_page.dart';
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
         ConfigRouter.custom_view: (context) => const CustomPage(),
         ConfigRouter.banner: (context) => const BannerPage(),
         ConfigRouter.circle_progress: (context) => const CircleProgressPage(progress: 10),
+        ConfigRouter.box_decoration: (context) => const BoxPage(),
       },
     );
   }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_control_project/widget/app_bar.dart';
 
-import '../config_router.dart';
+import '../../config_router.dart';
 
 class HomeGuidePage extends StatelessWidget {
   const HomeGuidePage({Key? key}) : super(key: key);
@@ -91,6 +91,14 @@ class HomeGuidePage extends StatelessWidget {
                   Navigator.pushNamed(context, ConfigRouter.banner);
                 },
                 child: const Text('Banner'),
+              ), const SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, ConfigRouter.box_decoration);
+                },
+                child: const Text('BoxDecoration的用法'),
               ),
             ],
           ),
