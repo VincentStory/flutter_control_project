@@ -91,7 +91,8 @@ class HomeGuidePage extends StatelessWidget {
                   Navigator.pushNamed(context, ConfigRouter.banner);
                 },
                 child: const Text('Banner'),
-              ), const SizedBox(
+              ),
+              const SizedBox(
                 height: 10,
               ),
               ElevatedButton(
@@ -99,6 +100,15 @@ class HomeGuidePage extends StatelessWidget {
                   Navigator.pushNamed(context, ConfigRouter.box_decoration);
                 },
                 child: const Text('BoxDecoration的用法'),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, ConfigRouter.input_text);
+                },
+                child: const Text('验证码输入框'),
               ),
             ],
           ),

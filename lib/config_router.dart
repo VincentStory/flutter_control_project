@@ -10,6 +10,7 @@ class ConfigRouter {
   static const String circle_progress = '/circle_progress';
   static const String banner = '/banner';
   static const String box_decoration = '/box_decoration';
+  static const String input_text = '/input_text';
 
 
 }

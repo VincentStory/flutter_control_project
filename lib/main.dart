@@ -7,6 +7,7 @@ import 'package:flutter_control_project/page/circle_progress_page.dart';
 import 'package:flutter_control_project/page/column_page.dart';
 import 'package:flutter_control_project/page/custom_view_page.dart';
 import 'package:flutter_control_project/page/home/home_guide_page.dart';
+import 'package:flutter_control_project/page/input_text_page.dart';
 import 'package:flutter_control_project/page/listview_page.dart';
 import 'package:flutter_control_project/page/stack_page.dart';
 import 'package:flutter_control_project/page/text_page.dart';
@@ -49,6 +50,7 @@ class MyApp extends StatelessWidget {
         ConfigRouter.banner: (context) => const BannerPage(),
         ConfigRouter.circle_progress: (context) => const CircleProgressPage(progress: 10),
         ConfigRouter.box_decoration: (context) => const BoxPage(),
+        ConfigRouter.input_text: (context) => const InputTextPage(),
       },
     );
   }
