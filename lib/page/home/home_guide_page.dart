@@ -110,6 +110,36 @@ class HomeGuidePage extends StatelessWidget {
                 },
                 child: const Text('验证码输入框'),
               ),
+              const SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, ConfigRouter.city_picker);
+                },
+                child: const Text('省市区选择器'),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, ConfigRouter.tab_page);
+                },
+                child: const Text('tab list'),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, ConfigRouter.date_picker);
+                },
+                child: const Text('时间选择器'),
+              ),
+              const SizedBox(
+                height: 100,
+              ),
             ],
           ),
         ),

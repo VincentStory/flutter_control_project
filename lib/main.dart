@@ -12,6 +12,10 @@ import 'package:flutter_control_project/page/listview_page.dart';
 import 'package:flutter_control_project/page/stack_page.dart';
 import 'package:flutter_control_project/page/text_page.dart';
 
+import 'page/city_picker_page.dart';
+import 'page/date_picker_page.dart';
+import 'page/my_tablist_page.dart';
+import 'page/parent_widget.dart';
 import 'page/row_page.dart';
 
 void main() {
@@ -51,6 +55,9 @@ class MyApp extends StatelessWidget {
         ConfigRouter.circle_progress: (context) => const CircleProgressPage(progress: 10),
         ConfigRouter.box_decoration: (context) => const BoxPage(),
         ConfigRouter.input_text: (context) => const InputTextPage(),
+        ConfigRouter.city_picker: (context) => const CityPickerPage(),
+        ConfigRouter.tab_page: (context) => MyDynamicTabListViewApp(),
+        ConfigRouter.date_picker: (context) => MyParentWidget(),
       },
     );
   }
